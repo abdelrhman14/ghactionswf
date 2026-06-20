@@ -1,0 +1,13 @@
+name : First GitHub WF
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Welcom Message
+              run: echo "My First Workflow"
+
+            - name: List files
+              run: ls
