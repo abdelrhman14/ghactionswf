@@ -24,4 +24,4 @@ jobs:
             run: cowsay -f dragon "Run for cover, Hi abdo" >> dragon.txt 
 
           - name: Read File
-            run: cat README.md
+            run: cat dragon.txt
