@@ -16,7 +16,7 @@ jobs:
           - name: List all files
             run: | 
                 ls
-                ls -lter
+                ls -ltra
           - name: Generate ASCII Network
             run: cowsay -f dragon "Run for cover, Hi abdo" >> dragon.txt 
 
