@@ -24,12 +24,23 @@ jobs:
 
           - name: Read File
             run: cat dragon.txt
+
+          - name: Upload
+            uses: actions/upload-artifact@v7
+            with:
+              name: v1
+              path: .github/workflows
           
 
     ascii_job:
       needs: first_job 
       runs-on: ubuntu-latest
       steps:
+
+        - name: Downlod
+            uses: actions/download-artifact@v8
+            with:
+
         - name: Executing Shell Script
           run: | 
                 cd .github/workflows
