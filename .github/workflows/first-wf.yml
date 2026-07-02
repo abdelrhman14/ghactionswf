@@ -13,8 +13,12 @@ jobs:
           - name: Welcom Message
             run: echo "My First Workflow"
 
-          - name: List files
-            run: ls 
+          - name: List all files
+            run: | 
+                ls
+                ls -lter
+          - name: Generate ASCII Network
+            run: cowsay -f dragon "Run for cover, Hi abdo" >> dragon.txt 
 
           - name: Read File
             run: cat README.md
