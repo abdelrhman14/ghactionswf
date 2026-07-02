@@ -25,3 +25,6 @@ jobs:
 
           - name: Read File
             run: cat dragon.txt
+          
+          - name: Executing Shell Script
+            run: ./ascii_script.sh
