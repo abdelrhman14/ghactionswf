@@ -33,4 +33,6 @@ jobs:
           uses: actions/checkout@v7
 
         - name: Executing Shell Script
-          run: ./ascii_script.sh
+          run: | 
+                cd .github/workflows
+                ./ascii_script.sh
