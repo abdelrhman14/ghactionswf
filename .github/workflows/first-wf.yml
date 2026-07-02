@@ -8,7 +8,7 @@ jobs:
         steps:
 
           - name: Checkout Repo
-            use: actions/checkout@v7
+            uses: actions/checkout@v7
 
           - name: Welcom Message
             run: echo "My First Workflow"
