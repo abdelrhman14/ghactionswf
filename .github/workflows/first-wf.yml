@@ -13,6 +13,9 @@ jobs:
           - name: Welcom Message
             run: echo "My First Workflow"
 
+          - name: Install Cowsay Program
+            run: sudo apt-get install cowsay -y
+            
           - name: List all files
             run: | 
                 ls
