@@ -38,8 +38,9 @@ jobs:
       steps:
 
         - name: Downlod
-            uses: actions/download-artifact@v8
-            with:
+          uses: actions/download-artifact@v8
+          with:
+            name: v1
 
         - name: Executing Shell Script
           run: | 
