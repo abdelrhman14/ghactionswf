@@ -35,5 +35,5 @@ jobs:
         - name: Executing Shell Script
           run: | 
                 cd .github/workflows
-                chmode +x ascii_script.sh
+                chmod +x ascii_script.sh
                 ./ascii_script.sh
